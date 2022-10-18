@@ -1,33 +1,33 @@
 #include <bits/stdc++.h>
 using namespace std;
-class Meter {
+class Str {
     private:
-    float meter;
+    string s;
     public:
-    Meter() {
-        meter = 0.0;
+    Str() {
+        s = "";
     }
     void setVal() {
-        cout<<"Give the value in meters"<<endl;
-        cin>>meter;
+        cout<<"Give the value of string"<<endl;
+        cin>>s;
     }
     void getVal() {
-        cout<<"Value from the object --> "<<meter<<endl;
+        cout<<"Value from the object --> "<<s<<endl;
     }
     // float operator (float) () {
     //     return meter*100;
     // }
-    operator float() {
-        return meter*100;
+    operator string() {
+        return s;
     }
 };
 int main() {
     cout<<"20BCS035\nMohammad Aatir Nadim"<<endl;
-    Meter m1;
-    m1.setVal();
-    m1.getVal();
-    float len1;
-    len1 = float(m1);
-    cout<<len1<<"\n";
+    Str s1;
+    s1.setVal();
+    s1.getVal();
+    string stemp;
+    stemp = string(s1);
+    cout<<"Value in basic type --> "<<stemp<<"\n";
     return 0;
 }

@@ -1,26 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
-class Meter {
+class Str {
     private:
-    float length;
+    string s;
     public:
-    Meter() {
-        length = 0.0;
+    Str() {
+        s = "";
     }
-    Meter(float len) {
-        length = len/100;
+    Str(string s) {
+        this->s = s;
     }
     void display() {
-        cout<<"Length is --> "<<length<<endl;
+        cout<<"value of string is --> "<<s<<endl;
     }
 };
 int main() {
     cout<<"20BCS035\nMohammad Aatir Nadim"<<endl;
-    float len1;
-    cout<<"Give the length"<<endl;
-    cin>>len1;
-    Meter m1;
-    m1 = len1;
-    m1.display();
+    string s1;
+    cout<<"Give the string"<<endl;
+    cin>>s1;
+    Str sobj;
+    sobj = s1;
+    sobj.display();
     return 0;
 }
